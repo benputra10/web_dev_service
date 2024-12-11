@@ -34,7 +34,7 @@ body {
 /* hero */
 /* Hero Section */
 .hero {
-  background: url("image/herobg.jpg") no-repeat center center/cover;
+  background: url("../image/herobg.jpg") no-repeat center center/cover;
   padding: 100px 0;
   color: #fff;
   position: relative;
