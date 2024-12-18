@@ -34,7 +34,7 @@ body {
 /* hero */
 /* Hero Section */
 .hero {
-  background: url("../image/herobg.jpg") no-repeat center center/cover;
+  background: url("../image/herobg.jpg") no-repeat center / cover;
   padding: 100px 0;
   color: #fff;
   position: relative;
@@ -109,7 +109,100 @@ body {
   }
 } */
 
-/* tentang kami */
+/* media queries hero*/
+/* Media Queries */
+
+/* Untuk Tablet (Lebar layar di bawah 992px) */
+@media (max-width: 992px) {
+  .hero {
+    padding: 40px 0;
+    text-align: center; /* Center semua konten */
+    height: ;
+  }
+
+  .hero-title {
+    font-size: 2rem; /* Perkecil ukuran font */
+    padding-top: 1px;
+  }
+
+  .hero-description {
+    font-size: 1rem; /* Deskripsi lebih kecil */
+    margin-bottom: 1rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-image {
+    max-width: 70%; /* Ukuran gambar di tablet */
+    margin-top: 20px;
+  }
+}
+
+/* Untuk Handphone (Lebar layar di bawah 768px) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0;
+    height: auto;
+    text-align: center; /* Center semua konten */
+  }
+
+  .hero-title {
+    font-size: 1.8rem; /* Perkecil ukuran font judul */
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 0.9rem; /* Deskripsi lebih kecil */
+  }
+
+  .hero-buttons .btn {
+    width: 100%; /* Tombol full width */
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-image {
+    max-width: 90%; /* Ukuran gambar disesuaikan */
+    margin-top: 20px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center tombol */
+  }
+}
+
+/* Untuk Layar Kecil Tambahan (Lebar layar di bawah 576px) */
+@media (max-width: 576px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-title {
+    font-size: 1.5rem; /* Judul lebih kecil */
+  }
+
+  .hero-description {
+    font-size: 0.8rem; /* Deskripsi lebih kecil */
+  }
+
+  .hero-buttons .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* tentang kami ---------------------------------*/
 /* About Services Section */
 .about-services {
   background-color: #f8f9fa; /* Warna latar terang untuk kesan profesional */
@@ -296,6 +389,57 @@ body {
   background: #45a049;
 }
 
+/* media queries pricing */
+/* Tablet Landscape (Lebar layar di bawah 992px) */
+@media (max-width: 992px) {
+  .pricing-tables {
+    flex-direction: row; /* Tetap horizontal */
+    gap: 15px;
+  }
+
+  .pricing-tables .column {
+    flex: 0 1 calc(50% - 15px); /* 2 kolom dalam satu baris */
+    max-width: calc(50% - 15px);
+  }
+
+  .pricing-tables .plan-title {
+    font-size: 1.4rem;
+  }
+
+  .pricing-tables .plan-price {
+    font-size: 1.7rem;
+  }
+}
+
+/* Mobile Phone (Lebar layar di bawah 576px) */
+@media (max-width: 576px) {
+  .pricing-tables {
+    flex-direction: column; /* Menjadi vertikal */
+    gap: 10px;
+  }
+
+  .pricing-tables .column {
+    flex: 0 1 100%; /* Full width */
+    max-width: 100%;
+  }
+
+  #pricing h1 {
+    font-size: 1.6rem;
+  }
+
+  .pricing-tables .plan-title {
+    font-size: 1.1rem;
+  }
+
+  .pricing-tables .plan-price {
+    font-size: 1.4rem;
+  }
+
+  .pricing-tables .features li {
+    font-size: 0.9rem;
+  }
+}
+
 /* ------------------------------------------------- */
 /* workflow */
 /* Workflow Section */
@@ -318,7 +462,7 @@ body {
   color: #ffffff;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-height: 200px;
+  height: 200px;
 }
 
 .workflow-icon {
@@ -369,6 +513,12 @@ body {
 @media (max-width: 1200px) {
   .workflow-step {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .workflow-box {
+    height: 120px;
   }
 }
 /* ------------------------------------------------ */
